@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@700&family=Montserrat:wght@400;500&family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(to top, #f576a0, transparent); }
+
+.box_content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f576a0;
+  position: relative; }
+
+.box_image {
+  width: 100%;
+  display: block;
+  position: relative; }
+
+.image2 {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px; }
+
+.image1 {
+  display: inline-block;
+  width: 100%; }
+
+.box_form {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 60px 15px; }
+  .box_form::before {
+    position: absolute;
+    left: 25px;
+    width: 90%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.7);
+    content: "";
+    filter: blur(50px);
+    bottom: 50px; }
+
+.box_form .box_bg {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  padding: 20px 30px;
+  position: relative; }
+  .box_form .box_bg .text_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -45px; }
+    .box_form .box_bg .text_center h2 {
+      color: #FFFFFF;
+      font-size: 32px;
+      background-color: #ed1f8d;
+      padding: 20px 30px;
+      text-transform: uppercase;
+      transform: skew(-5deg);
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: -10px; }
+    .box_form .box_bg .text_center b {
+      font-size: 40px;
+      color: #851951;
+      font-weight: 400;
+      font-family: sans-serif; }
+  .box_form .box_bg form {
+    text-align: left;
+    /* Arrow */
+    /* Transition */ }
+    .box_form .box_bg form input {
+      height: 60px;
+      border-radius: 10px;
+      font-style: italic;
+      font-family: sans-serif;
+      font-weight: 700; }
+    .box_form .box_bg form .select {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 60px;
+      align-items: center;
+      border-radius: 80px 0px 0px 80px;
+      overflow: hidden;
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.11);
+      background: #fff;
+      border-radius: 15px; }
+      .box_form .box_bg form .select select {
+        /* Reset Select */
+        appearance: none;
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+        /* Personalize */
+        flex: 1;
+        font-style: italic;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+        background-color: #fff;
+        background-image: none; }
+        .box_form .box_bg form .select select > option {
+          border: 1px solid #000 !important;
+          margin: 20px 0px; }
+      .box_form .box_bg form .select select::-ms-expand {
+        display: none; }
+    .box_form .box_bg form .select::after {
+      content: "V";
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 20px 20px;
+      background-color: #ed1d8c;
+      /* transition: 0.25s all ease; */
+      pointer-events: none;
+      color: #FFFFFF; }
+    .box_form .box_bg form .select:hover::after {
+      color: #FFFFFF; }
+    .box_form .box_bg form .buttan {
+      background: #ed1d8c;
+      margin: 20px 0px;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      justify-content: space-between;
+      border-radius: 15px; }
+      .box_form .box_bg form .buttan button {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100%; }
+        .box_form .box_bg form .buttan button a {
+          text-decoration: none;
+          color: #FFFFFF;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 18px; }
+      .box_form .box_bg form .buttan i {
+        color: #FFFFFF;
+        font-size: 24px;
+        position: relative;
+        top: 5px; }
+
+.box_text {
+  height: 60px;
+  margin: 20px 0px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 5px 15px; }
+  .box_text p {
+    margin-bottom: unset;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400; }
+
+@media only screen and (max-width: 475px) {
+  .box_text i {
+    font-size: 14px; } }
+@media only screen and (max-width: 420px) {
+  .box_form .box_bg .text_center h2 {
+    font-size: 24px; }
+  .box_form .box_bg .text_center b {
+    font-size: 32px; }
+
+  .box_text i {
+    font-size: 12px; } }
+@media only screen and (max-width: 375px) {
+  .box_form .box_bg {
+    padding: 30px 15px; }
+    .box_form .box_bg form input {
+      font-size: 14px; }
+    .box_form .box_bg .text_center h2 {
+      font-size: 22px; }
+    .box_form .box_bg .text_center b {
+      font-size: 24px; }
+
+  .box_text i {
+    font-size: 10px; } }
+.popup-gif {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; }
+  .popup-gif .box-gif {
+    max-width: 600px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .popup-gif img {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px; }
+
+@media only screen and (max-width: 320px) {
+  .box_form .box_bg .text_center h2 {
+    font-size: 20px; }
+  .box_form .box_bg .text_center b {
+    font-size: 24px; }
+
+  .box_text p {
+    font-size: 18px; }
+
+  .box_text i {
+    font-size: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
